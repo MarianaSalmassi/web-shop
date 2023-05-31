@@ -1,0 +1,23 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page36215942.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^furniture-and-accessoires$ page36215942.html [NC]
+RewriteRule ^furniture-and-accessoires/$ page36215942.html [NC]
+
+RewriteRule ^header$ page36233820.html [NC]
+RewriteRule ^header/$ page36233820.html [NC]
+
+RewriteRule ^footer$ page36233831.html [NC]
+RewriteRule ^footer/$ page36233831.html [NC]
+
+RewriteRule ^30$ page36233945.html [NC]
+RewriteRule ^30/$ page36233945.html [NC]
+
+
